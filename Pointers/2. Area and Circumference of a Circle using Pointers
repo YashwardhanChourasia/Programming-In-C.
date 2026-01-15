@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void area_peri(float, float*, float*);
+  
+int main() {
+	float r, area, peri;
+	scanf("%f" ,&r);
+	area_peri(r ,&area, &peri);
+	printf("%.2f\n",area);
+    printf("%.2f\n",peri);
+	
+}
+
+void area_peri(float r, float*area ,float*peri) {
+	*area = 3.14 * r * r;
+	*peri = 2 *3.14 * r;
+	
+}
